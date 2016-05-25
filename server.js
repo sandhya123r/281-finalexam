@@ -52,6 +52,16 @@ app.get("/users", function(req, res) {
 
 });
 
+app.get("/:servername/users",function(req,res) {
+    db.collection(COLLECTION).find({}).toArray(function(err, docs) {
+    if (err) {
+      handleError(res, err.message, "Failed to get contacts.");
+    } else {
+      res.status(200).json(docs);
+    }
+  });
+			
+}
 
 app.post("/users", function(req, res) {
   console.log("in post for users");
