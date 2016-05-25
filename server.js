@@ -4,7 +4,7 @@ var bodyParser 		= require("body-parser");
 var mongodb 		= require("mongodb");
 var app 		= express();
 var MongoClient 	= require('mongodb').MongoClient;
-var mongo_url     	= 'mongodb://ec2-52-39-103-72.us-west-2.compute.amazonaws.com:27017,ec2-52-39-92-74.us-west-2.compute.amazonaws.com:27017/users?replicaSet=replicaset';
+var mongo_url     	= 'mongodb://ec2-52-32-94-239.us-west-2.compute.amazonaws.com:27017,ec2-52-36-194-149.us-west-2.compute.amazonaws.com:27017/users?replicaSet=replicaset';
 var ObjectID 		= mongodb.ObjectID;
 
 
