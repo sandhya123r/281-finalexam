@@ -61,7 +61,7 @@ app.get("/:servername/users",function(req,res) {
     }
   });
 			
-}
+});
 
 app.post("/users", function(req, res) {
   console.log("in post for users");
